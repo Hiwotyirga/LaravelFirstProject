@@ -22,3 +22,22 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+/.run app
+php artisan serve
+
+/.for migrations
+php artisan migrate
+/. to clear catch
+
+  php artisan config:clear
+>> php artisan cache:clear
+>> php artisan route:clear
+>> php artisan view:clear
+
+/.to delete migrated recored
+DELETE FROM migrations
+WHERE migration LIKE '%citizen%';
+
+ /. to return migrated recored
+ SELECT * FROM migrations
